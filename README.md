@@ -2,4 +2,4 @@
 
 Dotfiles of osteotek@gmail.com
 
-Everything under WTFPL license — http://sam.zoy.org/wtfpl/
+Unless specified otherwise, everything under WTFPL license — http://sam.zoy.org/wtfpl/
