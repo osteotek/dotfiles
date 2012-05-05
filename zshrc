@@ -16,10 +16,6 @@ source $ZSH/oh-my-zsh.sh
 # PERSONAL CONFIG
 if [ `hostname` = "liza" ]; then
   export PATH=~/bin:~/perl5/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/cuda/bin:~/Dropbox/Bin
-  export PERL_LOCAL_LIB_ROOT="/home/arthur/perl5";
-  export PERL_MB_OPT="--install_base /home/arthur/perl5";
-  export PERL_MM_OPT="INSTALL_BASE=/home/arthur/perl5";
-  export PERL5LIB="/home/arthur/perl5/lib/perl5/x86_64-linux-gnu-thread-multi:/home/arthur/perl5/lib/perl5";
 elif [ `hostname` = "mini.local" ]; then
   export PATH=~/Bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:~/Dropbox/Bin
 elif [ `hostname` = "milly" ]; then
