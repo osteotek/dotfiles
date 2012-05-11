@@ -4,7 +4,7 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="pygmalion"
 
 if [ `hostname` = "liza" ]; then
-  plugins=(git autojump extract debian zsh-syntax-highlighting)
+  plugins=(git rvm autojump extract debian zsh-syntax-highlighting)
 elif [ `hostname` = "milly" ]; then
   plugins=(git autojump extract debian zsh-syntax-highlighting)
 elif [ `hostname` = "mini.local" ]; then
