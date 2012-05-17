@@ -6,11 +6,9 @@ colorscheme molokai
 
 set showcmd
 
-" set tite of terminal windows to file name
-set title
+set title " set title of terminal windows to file name
 
-" allow unsaved buffers
-set hidden
+set hidden " allow unsaved buffers 
 
 " cut the noise
 set visualbell
@@ -20,7 +18,7 @@ set ttyfast
 set relativenumber
 
 " applies substitutions globally on lines, without /g
-set gdefault
+"set gdefault
 
 " L-space to clear highlighting after search
 nnoremap <leader><space> :noh<cr>
@@ -52,7 +50,7 @@ set tildeop " use ~ as operator (for changing case)
 "nnoremap <silent> <[C>  gt 
 "nnoremap <silent> <C-right> gT
 
-noremap <Leader>n <plug>NERDTreeTabsToggle<CR>
+map <Leader>n <plug>NERDTreeTabsToggle<CR>
 
 hi link EasyMotionTarget ErrorMsg
 hi link EasyMotionShade  Comment
@@ -96,7 +94,7 @@ let g:yankring_history_dir = '~/.janus'
 
 " switch colon and semicolon
 nnoremap ; :
-nnoremap ; :
+nnoremap : ;
 
 "" neocomplcache stuff
 "" Disable AutoComplPop.
