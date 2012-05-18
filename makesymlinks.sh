@@ -1,14 +1,16 @@
 #!/bin/bash
 ############################
 # .make.sh
-# This script creates symlinks from the home directory to any desired dotfiles in ~/dotfiles
+# This script creates symlinks from the home
+# directory to any desired dotfiles in ~/dotfiles
 ############################
 
 ########## Variables
 
 dir=~/dotfiles                    # dotfiles directory
-olddir=~/.dotfiles_old             # old dotfiles backup directory
-files="zshrc tmux.conf pentadactylrc conky vimrc.before vimrc.after"    # list of files/folders to symlink in homedir
+olddir=~/.dotfiles_old            # old dotfiles backup directory
+# list of files/folders to symlink in homedir
+files="zshrc tmux.conf pentadactylrc conky vimrc.before vimrc.after vimperatorrc"
 
 ##########
 
@@ -22,7 +24,9 @@ echo "Changing to the $dir directory"
 cd $dir
 echo "...done"
 
-# move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks from the homedir to any files in the ~/dotfiles directory specified in $files
+# move any existing dotfiles in homedir to dotfiles_old directory,
+# then create symlinks from the homedir to any files in the ~/dotfiles
+# directory specified in $files
 for file in $files; do
     echo "Moving $file from ~ to $olddir"
     mv ~/.$file $olddir
