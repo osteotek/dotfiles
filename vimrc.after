@@ -30,6 +30,7 @@ inoremap jj <ESC>
 noremap <leader>w <C-w>v<C-w>l
 
 nnoremap <TAB> gt
+nnoremap <S-TAB> gT
 
 set tildeop " use ~ as operator (for changing case)
 
