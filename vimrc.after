@@ -94,8 +94,8 @@ let VimuxUseNearestPane = 1
 let g:yankring_history_dir = '~/.janus'
 
 " switch colon and semicolon
-nnoremap ; :
-nnoremap : ;
+"nnoremap ; :
+"nnoremap : ;
 
 "" neocomplcache stuff
 "" Disable AutoComplPop.
