@@ -1,0 +1,13 @@
+#!/bin/sh
+
+y='#[bg=yellow,fg=black]'
+g='#[bg=green, fg=black]'
+w='#[bg=white, fg=black]'
+b='#[bg=black]'
+
+users=`who | wc -l | awk '{print $1}'`
+mem=`top -unIt | awk 'NR == 4 {print $2}'`
+load=`sysctl vm.loadavg | awk '{print $3, $4, $5}'`
+
+set -- $load
+echo "$b $y$1$b $y$2$b $y$3$b $g$mem$b $w$users$b "
