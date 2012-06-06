@@ -4,11 +4,11 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="pygmalion"
 
 if [ `hostname` = "liza" ]; then
-  plugins=(git rvm autojump extract debian zsh-syntax-highlighting)
+  plugins=(git rvm autojump extract debian zsh-syntax-highlighting vi-mode)
 elif [ `hostname` = "milly" ]; then
-  plugins=(git autojump extract debian zsh-syntax-highlighting)
+  plugins=(git autojump extract debian zsh-syntax-highlighting vi-mode)
 elif [ `hostname` = "mini.local" ]; then
-  plugins=(git autojump extract osx brew zsh-syntax-highlighting)
+  plugins=(git autojump extract osx brew zsh-syntax-highlighting vi-mode)
 fi
 
 source $ZSH/oh-my-zsh.sh
