@@ -1,4 +1,6 @@
 "3.4 (created: 2012/04/02 20:07:29)
+:noremap j 3j
+:noremap k 3k
 
 highlight Bell border: none; background-color: #d0d0d0;
 highlight Boolean color: orchid;
