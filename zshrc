@@ -19,6 +19,8 @@ zstyle ':completion:*:manuals'    separate-sections true
 zstyle ':completion:*:manuals.*'  insert-sections   true
 zstyle ':completion:*:man:*'      menu yes select
 
+eval "$(fasd --init auto)"
+
 if [ `hostname` = "liza" ]; then
   export PATH=~/bin:~/perl5/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/cuda/bin:~/Dropbox/Bin
 elif [ `hostname` = "mini.local" ]; then
