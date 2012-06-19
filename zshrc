@@ -4,11 +4,11 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="pygmalion"
 
 if [ `hostname` = "liza" ]; then
-  plugins=(git extract debian vi-mode history-substring-search zsh-syntax-highlighting)
+  plugins=(git extract debian   vundle vi-mode history-substring-search zsh-syntax-highlighting)
 elif [ `hostname` = "milly" ]; then
-  plugins=(git extract debian vi-mode history-substring-search zsh-syntax-highlighting)
+  plugins=(git extract debian   vundle vi-mode history-substring-search zsh-syntax-highlighting)
 elif [ `hostname` = "mini.local" ]; then
-  plugins=(git extract osx brew vi-mode history-substring-search zsh-syntax-highlighting)
+  plugins=(git extract osx brew vundle vi-mode history-substring-search zsh-syntax-highlighting)
 fi
 
 source $ZSH/oh-my-zsh.sh
