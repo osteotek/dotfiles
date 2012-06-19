@@ -22,11 +22,11 @@ zstyle ':completion:*:man:*'      menu yes select
 eval "$(fasd --init auto)"
 
 if [ `hostname` = "liza" ]; then
-  export PATH=~/bin:~/perl5/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/cuda/bin:~/Dropbox/Bin
+  export PATH=~/bin:~/perl5/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/cuda/bin:~/dotfiles/bin
 elif [ `hostname` = "mini.local" ]; then
-  export PATH=~/Bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:~/Dropbox/Bin
+  export PATH=~/Bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:~/dotfiles/bin
 elif [ `hostname` = "milly" ]; then
-  export PATH=~/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:~/Dropbox/Bin
+  export PATH=~/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:~/dotfiles/bin
 fi
 
 export EDITOR=vim
