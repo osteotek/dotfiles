@@ -4,11 +4,11 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="pygmalion"
 
 if [ `hostname` = "liza" ]; then
-  plugins=(git extract debian   vundle vi-mode history-substring-search zsh-syntax-highlighting)
+  plugins=(git extract debian   fasd vi-mode history-substring-search zsh-syntax-highlighting)
 elif [ `hostname` = "milly" ]; then
-  plugins=(git extract debian   vundle vi-mode history-substring-search zsh-syntax-highlighting)
+  plugins=(git extract debian   fasd vi-mode history-substring-search zsh-syntax-highlighting)
 elif [ `hostname` = "mini.local" ]; then
-  plugins=(git extract osx brew vundle vi-mode history-substring-search zsh-syntax-highlighting)
+  plugins=(git extract osx brew fasd vi-mode history-substring-search zsh-syntax-highlighting)
 fi
 
 source $ZSH/oh-my-zsh.sh
@@ -18,8 +18,6 @@ source $ZSH/oh-my-zsh.sh
 zstyle ':completion:*:manuals'    separate-sections true
 zstyle ':completion:*:manuals.*'  insert-sections   true
 zstyle ':completion:*:man:*'      menu yes select
-
-eval "$(fasd --init auto)"
 
 if [ `hostname` = "liza" ]; then
   export PATH=~/bin:~/perl5/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/cuda/bin:~/dotfiles/bin
