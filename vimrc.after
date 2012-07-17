@@ -82,6 +82,12 @@ noremap <Leader>rx :CloseVimTmuxPanes<CR>
 noremap <Leader>rs :InterruptVimTmuxRunner<CR>
 let VimuxUseNearestPane = 1
 
+" Rainbow Parenthesis settings
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+
 " switch colon and semicolon
 "nnoremap ; :
 "nnoremap : ;
