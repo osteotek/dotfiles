@@ -5,34 +5,36 @@ set background=dark
 colorscheme molokai
 
 set showcmd
-
 set title " set title of terminal windows to file name
-
 set hidden " allow unsaved buffers 
-
-" cut the noise
 set visualbell
 set noerrorbells
-
 set ttyfast
 set relativenumber
+set tildeop " use ~ as operator (for changing case)
+set undofile " create <FILENAME>.un~ for persistent undo
+set mouse=a
+set scrolloff=5 " Keep 5 lines below and above the cursor
+
+" where find comand looks for files
+" .  - directory of current file
+" ,, - current directory (pwd)
+" ** - in subdirectories
+set path=.,,** " See http://www.allaboutvim.ru/2012/03/blog-post.html
+
 
 " applies substitutions globally on lines, without /g
 "set gdefault
 
 " L-space to clear highlighting after search
 nnoremap <leader><space> :noh<cr>
-
 " use jj in insert mode to go to command mode
 inoremap jj <ESC>
-
 " Lw to make new vertical split and jump to it
 noremap <leader>w <C-w>v<C-w>l
-
 nnoremap <TAB> gt
 nnoremap <S-TAB> gT
-
-set tildeop " use ~ as operator (for changing case)
+map <Leader>n <plug>NERDTreeTabsToggle<CR>
 
 " paste mode, without all the smartness
 " set pastetoggle=<F2>
@@ -51,30 +53,19 @@ set tildeop " use ~ as operator (for changing case)
 "nnoremap <silent> <[C>  gt 
 "nnoremap <silent> <C-right> gT
 
-map <Leader>n <plug>NERDTreeTabsToggle<CR>
 
 hi link EasyMotionTarget ErrorMsg
 hi link EasyMotionShade  Comment
-
-set mouse=a
-
-set scrolloff=5 " Keep 5 lines below and above the cursor
-
-" where find comand looks for files
-" .  - directory of current file
-" ,, - current directory (pwd)
-" ** - in subdirectories
-set path=.,,** " See http://www.allaboutvim.ru/2012/03/blog-post.html
 
 " set cuda filetype for *.cu files
 au BufNewFile,BufRead *.cu set ft=cpp
 
 let g:ctrlp_extensions = ['tag']
+let g:yankring_history_dir = '~/.janus'
 
 " Yank text to the OS X clipboard
 noremap <leader>y "*y
 noremap <leader>yy "*Y
-
 " Preserve indentation while pasting text from the OS X clipboard
 noremap <leader>p :set paste<CR>:put  *<CR>:set nopaste<CR>
 
@@ -90,8 +81,6 @@ noremap <Leader>rx :CloseVimTmuxPanes<CR>
 " Interrupt any command running in the runner pane
 noremap <Leader>rs :InterruptVimTmuxRunner<CR>
 let VimuxUseNearestPane = 1
-
-let g:yankring_history_dir = '~/.janus'
 
 " switch colon and semicolon
 "nnoremap ; :
