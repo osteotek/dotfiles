@@ -1,6 +1,7 @@
 let mapleader = ","
 
 let g:Powerline_symbols = 'fancy'
+let g:yankring_history_file = '.yankring_history'
 set timeout ttimeoutlen=50
 
 "call janus#disable_plugin('supertab')

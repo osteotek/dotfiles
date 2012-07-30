@@ -61,7 +61,6 @@ hi link EasyMotionShade  Comment
 au BufNewFile,BufRead *.cu set ft=cpp
 
 let g:ctrlp_extensions = ['tag']
-let g:yankring_history_dir = '~/.janus'
 
 " Yank text to the OS X clipboard
 noremap <leader>y "*y
