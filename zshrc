@@ -4,11 +4,11 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="pygmalion"
 
 if [ `hostname` = "liza" ]; then
-  plugins=(git extract debian   fasd vi-mode history-substring-search zsh-syntax-highlighting)
-elif [ `hostname` = "milly" ]; then
-  plugins=(git extract debian   fasd vi-mode history-substring-search zsh-syntax-highlighting)
+  plugins=(git extract debian   fasd history-substring-search zsh-syntax-highlighting)
+elif [ `hostname` = "s205" ]; then
+  plugins=(git extract debian vundle fasd history-substring-search zsh-syntax-highlighting)
 elif [ `hostname` = "mini.local" ]; then
-  plugins=(git extract osx brew fasd vi-mode history-substring-search zsh-syntax-highlighting)
+  plugins=(git extract osx brew fasd history-substring-search zsh-syntax-highlighting)
 fi
 
 source $ZSH/oh-my-zsh.sh
@@ -23,7 +23,7 @@ if [ `hostname` = "liza" ]; then
   export PATH=~/bin:~/perl5/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/cuda/bin:~/dotfiles/bin
 elif [ `hostname` = "mini.local" ]; then
   export PATH=~/Bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:~/dotfiles/bin
-elif [ `hostname` = "milly" ]; then
+elif [ `hostname` = "s205" ]; then
   export PATH=~/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:~/dotfiles/bin
 fi
 
