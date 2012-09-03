@@ -72,6 +72,7 @@ Bundle 'gmarik/vundle'
 " PLUGINS: COLORSCHEMES {{{1
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'oguzbilgic/sexy-railscasts-theme'
+Bundle 'Lokaltog/vim-distinguished'
 Bundle 'telamon/vim-color-github'
 Bundle 'TechnoGate/janus-colors'
 Bundle 'larssmit/vim-getafe'
@@ -79,6 +80,7 @@ Bundle 'Color-Sampler-Pack'
 Bundle 'jnurmine/Zenburn'
 Bundle 'sjl/badwolf'
 Bundle 'Mustang2'
+Bundle 'Guardian'
 Bundle 'molokai'
 Bundle 'Wombat'
 colorscheme molokai
@@ -87,6 +89,7 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'tpope/vim-commentary'
 Bundle 'davidoc/todo.txt-vim'
 Bundle 'tpope/vim-surround'
+Bundle 'vimcn/bufexplorer.vim'
 Bundle 'xolox/vim-easytags'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-repeat'
@@ -136,7 +139,7 @@ noremap <Leader>rx :CloseVimTmuxPanes<CR>
 noremap <Leader>rs :InterruptVimTmuxRunner<CR>
 " PLUGINS: VISUAL {{{1
 Bundle 'jeffkreeftmeijer/vim-numbertoggle'
-Bundle 'CSApprox'
+" Bundle 'CSApprox'
 Bundle 'ScrollColors'
 
 Bundle 'kien/rainbow_parentheses.vim'

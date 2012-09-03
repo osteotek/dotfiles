@@ -8,7 +8,7 @@ if [ `hostname` = "liza" ]; then
 elif [ `hostname` = "s205" ]; then
   plugins=(git extract debian vundle fasd history-substring-search zsh-syntax-highlighting)
 elif [ `hostname` = "mini.local" ]; then
-  plugins=(git extract osx brew fasd history-substring-search zsh-syntax-highlighting)
+  plugins=(git extract osx brew fasd vundle history-substring-search zsh-syntax-highlighting)
 fi
 
 source $ZSH/oh-my-zsh.sh
