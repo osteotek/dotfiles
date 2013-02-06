@@ -14,7 +14,6 @@ set ignorecase              " ignore case completely
 set smartcase               " be case sensitive when input has a capital letter
 let g:is_posix = 1          " use modern version of builtin shell
                             " set cuda filetype for *.cu files
-" au BufNewFile,BufRead *.cu set ft=cpp
 " VISUAL {{{1
 syntax on                   " enable syntax highlighting
 set showmatch               " show matching brackets
@@ -98,6 +97,7 @@ Bundle 'mattn/webapi-vim'
 Bundle 'spolu/dwm.vim'
 Bundle 'workflowish'
 Bundle 'vimwiki'
+Bundle 'Valloric/YouCompleteMe'
 
 Bundle 'majutsushi/tagbar'
 nmap <Leader>t :TagbarToggle<CR>
