@@ -31,5 +31,11 @@ Icon?
 ehthumbs.db
 Thumbs.db'
 
-# Vim undo files #
-*.un~
+# Vim files #
+*.un\~
+.*.sw[a-z]
+Session.vim
+
+# Ignore tags created by etags and ctags
+tags
+TAGS

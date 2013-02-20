@@ -2,6 +2,6 @@
 
 while true
 do
-  ssh -R 19999:localhost:22 arthur@lisnake.dyndns.org
+  ssh -R 19999:localhost:22 user@domain.xxx
   sleep 10
 done
