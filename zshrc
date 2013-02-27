@@ -25,6 +25,9 @@ fi
 
 export EDITOR=vim
 export TERM=screen-256color
+export BYOBU_PREFIX=$(brew --prefix)
+export ARCHFLAGS="-arch x86_64"
+fpath=(/usr/local/share/zsh-completions $fpath)
 
 alias ll=" LC_ALL=en_US.UTF-8 LANG=en ls++ "
 alias zshconfig="vim ~/.zshrc"

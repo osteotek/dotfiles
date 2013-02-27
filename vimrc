@@ -142,6 +142,7 @@ noremap <Leader>rs :InterruptVimTmuxRunner<CR>
 Bundle 'jeffkreeftmeijer/vim-numbertoggle'
 " Bundle 'CSApprox'
 Bundle 'ScrollColors'
+Bundle 'airblade/vim-gitgutter'
 
 Bundle 'kien/rainbow_parentheses.vim'
 au VimEnter * RainbowParenthesesToggle
