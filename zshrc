@@ -1,7 +1,7 @@
 # OH-MY-ZSH CONFIG
 ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME="pygmalion"
+ZSH_THEME="robbyrussell"
 
 if [ `uname` = "Linux" ]; then
   plugins=(git extract debian vundle fasd history-substring-search zsh-syntax-highlighting)
@@ -19,6 +19,8 @@ zstyle ':completion:*:man:*'      menu yes select
 
 if [ `hostname` = "mini.osteoteka.com" ]; then
   export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:~/dotfiles/bin:~/Dropbox/bin
+elif [ `hostname` = "retina.local" ]; then
+  export PATH=/usr/local/share/python:/Developer/NVIDIA/CUDA-5.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 elif [ `uname` = "Linux" ]; then
   export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:~/dotfiles/bin
 fi

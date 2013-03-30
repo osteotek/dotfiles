@@ -13,7 +13,6 @@ set autoread                " reads on make/shell commands
 set ignorecase              " ignore case completely
 set smartcase               " be case sensitive when input has a capital letter
 let g:is_posix = 1          " use modern version of builtin shell
-                            " set cuda filetype for *.cu files
 " VISUAL {{{1
 syntax on                   " enable syntax highlighting
 set showmatch               " show matching brackets
@@ -89,7 +88,7 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'tpope/vim-commentary'
 Bundle 'davidoc/todo.txt-vim'
 Bundle 'tpope/vim-surround'
-Bundle 'vimcn/bufexplorer.vim'
+Bundle 'bufexplorer.zip'
 Bundle 'xolox/vim-easytags'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-repeat'
