@@ -18,7 +18,7 @@ zstyle ':completion:*:manuals.*'  insert-sections   true
 zstyle ':completion:*:man:*'      menu yes select
 
 if [ `hostname` = "mini.osteoteka.com" ]; then
-  export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:~/dotfiles/bin:~/Dropbox/bin
+  export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:~/dotfiles/bin:~/Dropbox/bin
 elif [ `hostname` = "retina.local" ]; then
   export PATH=/usr/local/share/python:/Developer/NVIDIA/CUDA-5.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 elif [ `uname` = "Linux" ]; then

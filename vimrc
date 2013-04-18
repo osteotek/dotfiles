@@ -97,6 +97,8 @@ Bundle 'spolu/dwm.vim'
 Bundle 'workflowish'
 Bundle 'vimwiki'
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'rizzatti/funcoo.vim'
+Bundle 'rizzatti/dash.vim'
 
 Bundle 'majutsushi/tagbar'
 nmap <Leader>t :TagbarToggle<CR>
