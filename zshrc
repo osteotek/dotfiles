@@ -26,7 +26,7 @@ elif [ `uname` = "Linux" ]; then
 fi
 
 export EDITOR=vim
-export TERM=screen-256color
+export TERM=xterm-256color
 export BYOBU_PREFIX=$(brew --prefix)
 #export ARCHFLAGS="-arch x86_64"
 fpath=(/usr/local/share/zsh-completions $fpath)
