@@ -5,7 +5,6 @@ set timeout ttimeoutlen=50  " timeout 50 milliseconds on key codes
 set hidden                  " allow unsaved buffers
 set ttyfast                 " indicates fast terminal connection
 set tildeop                 " use '~' (case changing) as operator
-set undofile                " create <FILENAME>.un~ for persistent undo
 set mouse=a                 " use mouse in all modes
 " set clipboard+=unnamed      " yanks go to clipboard instead
 set autowrite               " writes on make/shell commands
@@ -13,6 +12,46 @@ set autoread                " reads on make/shell commands
 set ignorecase              " ignore case completely
 set smartcase               " be case sensitive when input has a capital letter
 let g:is_posix = 1          " use modern version of builtin shell
+" BACKUPS {{{1
+" Save your backups to a less annoying place than the current directory.
+" If you have .vim-backup in the current directory, it'll use that.
+" Otherwise it saves it to ~/.vim/backup or . if all else fails.
+if isdirectory($HOME . '/.vim/backup') == 0
+  :silent !mkdir -p ~/.vim/backup >/dev/null 2>&1
+endif
+set backupdir-=.
+set backupdir+=.
+set backupdir-=~/
+set backupdir^=~/.vim/backup/
+set backupdir^=./.vim-backup/
+set backup
+
+" Save your swp files to a less annoying place than the current directory.
+" If you have .vim-swap in the current directory, it'll use that.
+" Otherwise it saves it to ~/.vim/swap, ~/tmp or .
+if isdirectory($HOME . '/.vim/swap') == 0
+  :silent !mkdir -p ~/.vim/swap >/dev/null 2>&1
+endif
+set directory=./.vim-swap//
+set directory+=~/.vim/swap//
+set directory+=~/tmp//
+set directory+=.
+
+" viminfo stores the the state of your previous editing session
+set viminfo+=n~/.vim/viminfo
+
+if exists("+undofile")
+  " undofile - This allows you to use undos after exiting and restarting
+  " This, like swap and backups, uses .vim-undo first, then ~/.vim/undo
+  " :help undo-persistence
+  " This is only present in 7.3+
+  if isdirectory($HOME . '/.vim/undo') == 0
+    :silent !mkdir -p ~/.vim/undo > /dev/null 2>&1
+  endif
+  set undodir=./.vim-undo//
+  set undodir+=~/.vim/undo//
+  set undofile
+endif
 " VISUAL {{{1
 syntax on                   " enable syntax highlighting
 set showmatch               " show matching brackets
