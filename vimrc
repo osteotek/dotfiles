@@ -106,67 +106,69 @@ nnoremap <S-TAB> gT
 filetype off                " required for vundle initialisation
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 " PLUGINS: COLORSCHEMES {{{1
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'oguzbilgic/sexy-railscasts-theme'
-Bundle 'Lokaltog/vim-distinguished'
-Bundle 'telamon/vim-color-github'
-Bundle 'TechnoGate/janus-colors'
-Bundle 'larssmit/vim-getafe'
-Bundle 'Color-Sampler-Pack'
-Bundle 'jnurmine/Zenburn'
-Bundle 'sjl/badwolf'
-Bundle 'Mustang2'
-Bundle 'Guardian'
-Bundle 'molokai'
-Bundle 'Wombat'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'oguzbilgic/sexy-railscasts-theme'
+Plugin 'Lokaltog/vim-distinguished'
+Plugin 'telamon/vim-color-github'
+Plugin 'TechnoGate/janus-colors'
+Plugin 'larssmit/vim-getafe'
+Plugin 'Color-Sampler-Pack'
+Plugin 'jnurmine/Zenburn'
+Plugin 'sjl/badwolf'
+Plugin 'Mustang2'
+Plugin 'Guardian'
+Plugin 'molokai'
+Plugin 'Wombat'
+set t_Co=256
 colorscheme molokai
-" PLUGINS: GENERAL {{{1
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'tpope/vim-commentary'
-Bundle 'davidoc/todo.txt-vim'
-Bundle 'tpope/vim-surround'
-Bundle 'bufexplorer.zip'
-"Bundle 'xolox/vim-easytags'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-repeat'
-Bundle 'mattn/webapi-vim'
-Bundle 'spolu/dwm.vim'
-Bundle 'workflowish'
-Bundle 'vimwiki'
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'rizzatti/funcoo.vim'
-Bundle 'rizzatti/dash.vim'
 
-Bundle 'majutsushi/tagbar'
+" PLUGINS: GENERAL {{{1
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'tpope/vim-commentary'
+Plugin 'davidoc/todo.txt-vim'
+Plugin 'tpope/vim-surround'
+Plugin 'bufexplorer.zip'
+"Plugin 'xolox/vim-easytags'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-repeat'
+Plugin 'mattn/webapi-vim'
+Plugin 'spolu/dwm.vim'
+Plugin 'workflowish'
+Plugin 'vimwiki'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'rizzatti/funcoo.vim'
+Plugin 'rizzatti/dash.vim'
+
+Plugin 'majutsushi/tagbar'
 nmap <Leader>t :TagbarToggle<CR>
 
-Bundle 'scrooloose/syntastic'
+Plugin 'scrooloose/syntastic'
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_loc_list=1
 
-Bundle 'scrooloose/nerdtree'
-Bundle 'jistr/vim-nerdtree-tabs'
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
 map <Leader>n <plug>NERDTreeTabsToggle<CR>
 
-Bundle 'kien/ctrlp.vim'
+Plugin 'kien/ctrlp.vim'
 let g:ctrlp_map='<c-t>'
 let g:ctrlp_cmd='CtrlP'
 let g:ctrlp_extensions = ['tag']
 
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'tomtom/tlib_vim'
-Bundle 'honza/snipmate-snippets'
-Bundle 'garbas/vim-snipmate'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'honza/vim-snippets'
+Plugin 'garbas/vim-snipmate'
 
-Bundle 'Gundo'
+Plugin 'Gundo'
 nnoremap <F5> :GundoToggle<CR>
 
-Bundle 'YankRing.vim'
+Plugin 'YankRing.vim'
 let g:yankring_history_file='.yankring_history'
 
-Bundle 'benmills/vimux'
+Plugin 'benmills/vimux'
 let VimuxUseNearestPane = 1
                             " Prompt for a command to run
 noremap <Leader>rp :PromptVimTmuxCommand<CR>
@@ -179,38 +181,41 @@ noremap <Leader>rx :CloseVimTmuxPanes<CR>
                             " Interrupt any command running in the runner pane
 noremap <Leader>rs :InterruptVimTmuxRunner<CR>
 " PLUGINS: VISUAL {{{1
-Bundle 'jeffkreeftmeijer/vim-numbertoggle'
-" Bundle 'CSApprox'
-Bundle 'ScrollColors'
-Bundle 'airblade/vim-gitgutter'
+Plugin 'jeffkreeftmeijer/vim-numbertoggle'
+" Plugin 'CSApprox'
+Plugin 'ScrollColors'
+Plugin 'airblade/vim-gitgutter'
 
-Bundle 'kien/rainbow_parentheses.vim'
+Plugin 'kien/rainbow_parentheses.vim'
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
-Bundle 'Lokaltog/vim-powerline'
-let g:Powerline_symbols='fancy'
+"Plugin 'Lokaltog/vim-powerline'
+"let g:Powerline_symbols='fancy'
 
-Bundle 'nathanaelkane/vim-indent-guides'
+Plugin 'bling/vim-airline'
+let g:airline_powerline_fonts = 1
+
+Plugin 'nathanaelkane/vim-indent-guides'
 " let g:indent_guides_enable_on_vim_startup=1
 let g:indent_guides_guide_size=1
 
 " PLUGINS: SYNTAXES {{{1
-Bundle 'Arduino-syntax-file'
-Bundle 'tpope/vim-git'
-Bundle 'pangloss/vim-javascript'
-Bundle 'tpope/vim-markdown'
-Bundle 'mmalecki/vim-node.js'
-Bundle 'rosstimson/scala-vim-support'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'VimClojure'
-Bundle 'csv.vim'
-Bundle 'nono/vim-handlebars'
-Bundle 'wlangstroth/vim-haskell'
-Bundle 'tpope/vim-rails'
-Bundle 'groenewege/vim-less'
+Plugin 'Arduino-syntax-file'
+Plugin 'tpope/vim-git'
+Plugin 'pangloss/vim-javascript'
+Plugin 'tpope/vim-markdown'
+Plugin 'mmalecki/vim-node.js'
+Plugin 'rosstimson/scala-vim-support'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'VimClojure'
+Plugin 'csv.vim'
+Plugin 'nono/vim-handlebars'
+Plugin 'wlangstroth/vim-haskell'
+Plugin 'tpope/vim-rails'
+Plugin 'groenewege/vim-less'
 
 filetype plugin indent on   " required after vundle
 " FUNCTIONS {{{1

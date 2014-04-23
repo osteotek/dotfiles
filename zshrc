@@ -33,6 +33,7 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 
 alias ll=" LC_ALL=en_US.UTF-8 LANG=en ls++ "
 alias zshconfig="vim ~/.zshrc"
+alias vimconfig="vim ~/.vimrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
-#alias tmux="tmux -2"
+alias tmux="tmux -2"
 alias t="~/Dropbox/Bin/todo.txt/todo.sh -tnA -d ~/Dropbox/Bin/todo.txt/todo.cfg"
