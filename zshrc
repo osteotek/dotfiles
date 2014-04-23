@@ -1,7 +1,7 @@
 # OH-MY-ZSH CONFIG
 ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME="robbyrussell"
+ZSH_THEME="terminalparty"
 
 if [ `uname` = "Linux" ]; then
   plugins=(git extract debian vundle fasd history-substring-search zsh-syntax-highlighting)
@@ -35,5 +35,4 @@ alias ll=" LC_ALL=en_US.UTF-8 LANG=en ls++ "
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 #alias tmux="tmux -2"
-alias sshhome="ssh arthur@lisnake.dyndns.org"
 alias t="~/Dropbox/Bin/todo.txt/todo.sh -tnA -d ~/Dropbox/Bin/todo.txt/todo.cfg"
