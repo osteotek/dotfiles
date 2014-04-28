@@ -128,7 +128,7 @@ colorscheme molokai
 Plugin 'Shougo/unite.vim'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'tpope/vim-commentary'
-Plugin 'davidoc/todo.txt-vim'
+Plugin 'freitass/todo.txt-vim'
 Plugin 'tpope/vim-surround'
 Plugin 'bufexplorer.zip'
 "Plugin 'xolox/vim-easytags'
