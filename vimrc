@@ -125,6 +125,7 @@ set t_Co=256
 colorscheme molokai
 
 " PLUGINS: GENERAL {{{1
+Plugin 'Shougo/unite.vim'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'tpope/vim-commentary'
 Plugin 'davidoc/todo.txt-vim'
