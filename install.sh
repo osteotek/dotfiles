@@ -10,7 +10,7 @@
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/.dotfiles_old            # old dotfiles backup directory
 # list of files/folders to symlink in homedir
-files="zshrc tmux.conf vimrc vimperatorrc fonts gitignore"
+files="zshrc tmux.conf vimrc vimperatorrc fonts gitignore zsh_favlist"
 
 ##########
 
@@ -55,6 +55,7 @@ else
     # If the platform is OS X, tell the user to install zsh :)
     elif [[ $platform == 'Darwin' ]]; then
         echo "Please install zsh, then re-run this script!"
+        # brew install zsh
         exit
     fi
 fi
