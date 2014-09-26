@@ -20,7 +20,8 @@ zstyle ':completion:*:man:*'      menu yes select
 if [ `hostname` = "mini.osteoteka.com" ]; then
   export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:~/dotfiles/bin:~/Dropbox/bin
 elif [ `hostname` = "retina.local" ]; then
-  export PATH=/usr/local/share/python:/Developer/NVIDIA/CUDA-5.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+  export PATH=/Developer/NVIDIA/CUDA-6.0/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+  #export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-6.0/lib:$DYLD_LIBRARY_PATH
 elif [ `uname` = "Linux" ]; then
   export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:~/dotfiles/bin
 fi
@@ -37,3 +38,4 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 #alias tmux="tmux -2"
 alias sshhome="ssh arthur@lisnake.dyndns.org"
 alias t="~/Dropbox/Bin/todo.txt/todo.sh -tnA -d ~/Dropbox/Bin/todo.txt/todo.cfg"
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
