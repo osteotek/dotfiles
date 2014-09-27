@@ -18,7 +18,7 @@ zstyle ':completion:*:manuals.*'  insert-sections   true
 zstyle ':completion:*:man:*'      menu yes select
 
 if [ `hostname` = "mini" ]; then
-  export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:~/dotfiles/bin:~/Dropbox/bin
+  export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:~/dotfiles/bin:~/Dropbox/bin:/Applications/Android\ Studio.app/sdk/platform-tools:$PATH
   export BYOBU_PREFIX=$(brew --prefix)
 elif [ `hostname` = "retina.local" ]; then
   export PATH=/usr/local/share/python:/Developer/NVIDIA/CUDA-5.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
@@ -39,3 +39,5 @@ alias tmux="tmux -2"
 alias t="~/Dropbox/Bin/todo.txt-cli/todo.sh -tnA -d ~/Dropbox/Bin/todo.txt-cli/todo.cfg"
 alias zshreload="source ~/.zshrc"
 alias speed="speedtest-cli --mini http://v.ufanet.ru/"
+
+#export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
