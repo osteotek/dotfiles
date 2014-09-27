@@ -36,19 +36,10 @@ alias ll=" LC_ALL=en_US.UTF-8 LANG=en ls++ "
 alias zshconfig="vim ~/.zshrc"
 alias vimconfig="vim ~/.vimrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
-<<<<<<< HEAD
 #alias tmux="tmux -2"
 alias sshhome="ssh arthur@lisnake.dyndns.org"
 alias t="~/Dropbox/Bin/todo.txt/todo.sh -tnA -d ~/Dropbox/Bin/todo.txt/todo.cfg"
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-=======
-alias tmux="tmux -2"
-alias t="~/Dropbox/Bin/todo.txt-cli/todo.sh -tnA -d ~/Dropbox/Bin/todo.txt-cli/todo.cfg"
 alias zshreload="source ~/.zshrc"
 alias speed="speedtest-cli --mini http://v.ufanet.ru/"
-<<<<<<< HEAD
-
 #export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-=======
->>>>>>> bb5cd0a1f5276a9c2ef3ab5d0c70af787fffdf0a
->>>>>>> b353dfa092a4712ac060bb295c9d1b389b252d8b
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
