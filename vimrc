@@ -1,12 +1,12 @@
 " GENERAL {{{1
 set nocompatible            " be iMproved
-set encoding=utf-8           " use unicode everywhere
+set encoding=utf-8          " use unicode everywhere
 set timeout ttimeoutlen=50  " timeout 50 milliseconds on key codes
 set hidden                  " allow unsaved buffers
 set ttyfast                 " indicates fast terminal connection
 set tildeop                 " use '~' (case changing) as operator
 set mouse=a                 " use mouse in all modes
-" set clipboard+=unnamed      " yanks go to clipboard instead
+"set clipboard+=unnamed      " yanks go to clipboard instead
 set autowrite               " writes on make/shell commands
 set autoread                " reads on make/shell commands
 set ignorecase              " ignore case completely
@@ -113,6 +113,7 @@ Plugin 'oguzbilgic/sexy-railscasts-theme'
 Plugin 'Lokaltog/vim-distinguished'
 Plugin 'telamon/vim-color-github'
 Plugin 'TechnoGate/janus-colors'
+Plugin 'whatyouhide/vim-gotham'
 Plugin 'larssmit/vim-getafe'
 Plugin 'Color-Sampler-Pack'
 Plugin 'jnurmine/Zenburn'
@@ -122,8 +123,7 @@ Plugin 'Guardian'
 Plugin 'molokai'
 Plugin 'Wombat'
 set t_Co=256
-colorscheme molokai
-
+colorscheme gotham
 " PLUGINS: GENERAL {{{1
 Plugin 'Shougo/unite.vim'
 Plugin 'Lokaltog/vim-easymotion'
