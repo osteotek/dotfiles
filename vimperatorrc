@@ -1,8 +1,8 @@
 set gui=none,tabs
 :noremap j 3j
 :noremap k 3k
-map J gT
-map K gt
+map J gt
+map K gT
 colors monokai
 
 " vim: set ft=vimperator:
