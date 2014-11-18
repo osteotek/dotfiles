@@ -22,7 +22,10 @@ if [ `hostname` = "mini" ]; then
   export BYOBU_PREFIX=$(brew --prefix)
 elif [ `hostname` = "retina.local" ]; then
   export PATH=/Developer/NVIDIA/CUDA-6.5/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+<<<<<<< HEAD
   export ANDROID_HOME=/usr/local/opt/android-sdk
+=======
+>>>>>>> b4f339e6ef0a8cbade95839872a7693d3944260b
   #export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-6.0/lib:$DYLD_LIBRARY_PATH
 elif [ `uname` = "Linux" ]; then
   export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:~/dotfiles/bin
@@ -38,7 +41,7 @@ alias zshconfig="vim ~/.zshrc"
 alias vimconfig="vim ~/.vimrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 #alias tmux="tmux -2"
-alias sshhome="ssh arthur@lisnake.dyndns.org"
+#alias sshhome="ssh arthur@lisnake.dyndns.org"
 alias t="~/Dropbox/Bin/todo.txt/todo.sh -tnA -d ~/Dropbox/Bin/todo.txt/todo.cfg"
 alias zshreload="source ~/.zshrc"
 alias speed="speedtest-cli --mini http://v.ufanet.ru/"
