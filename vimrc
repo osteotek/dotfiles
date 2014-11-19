@@ -217,6 +217,7 @@ Plugin 'nono/vim-handlebars'
 Plugin 'wlangstroth/vim-haskell'
 Plugin 'tpope/vim-rails'
 Plugin 'groenewege/vim-less'
+Plugin 'Keithbsmiley/swift.vim'
 
 filetype plugin indent on   " required after vundle
 " FUNCTIONS {{{1
