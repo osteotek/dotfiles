@@ -56,7 +56,7 @@ endif
 syntax on                   " enable syntax highlighting
 set showmatch               " show matching brackets
 set matchtime=2             " bracket blinking
-set visualbell              " use visualbell instead of beeping
+"set visualbell              " use visualbell instead of beeping
 set colorcolumn=81          " use color column
 set relativenumber          " use relative line numbering
 set title                   " set title of terminal window to filename
