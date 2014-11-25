@@ -71,6 +71,7 @@ set laststatus=2            " always show status line
 set wildmenu                " enhanced command-line completion
 set wildmode=full           " at command line, complete longest string
 set wildignorecase          " ignore case in file name completion
+set t_Co=256                " terminal has 256 colors
 
 " show tabs as '  ', trailing spaces as '.', and carrots for extended lines
 set listchars=""
@@ -102,74 +103,76 @@ noremap <leader>w <C-w>v<C-w>l
                             " TAB and Shift-TAB for tab switching in normal mode
 nnoremap <TAB> gt
 nnoremap <S-TAB> gT
-" VUNDLE INITIALIZATION {{{1
-filetype off                " required for vundle initialisation
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Plugin 'gmarik/vundle'
+" VIM-PLUG INITIALIZATION {{{1
+if empty(glob('~/.vim/autoload/plug.vim'))
+    silent !mkdir -p ~/.vim/autoload
+    silent !curl -fLo ~/.vim/autoload/plug.vim
+      \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugInstall
+endif
+call plug#begin('~/.vim/bundle')
 " PLUGINS: COLORSCHEMES {{{1
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'oguzbilgic/sexy-railscasts-theme'
-Plugin 'Lokaltog/vim-distinguished'
-Plugin 'telamon/vim-color-github'
-Plugin 'TechnoGate/janus-colors'
-Plugin 'whatyouhide/vim-gotham'
-Plugin 'larssmit/vim-getafe'
-Plugin 'Color-Sampler-Pack'
-Plugin 'jnurmine/Zenburn'
-Plugin 'sjl/badwolf'
-Plugin 'Mustang2'
-Plugin 'Guardian'
-Plugin 'molokai'
-Plugin 'Wombat'
-set t_Co=256
-colorscheme gotham
+Plug 'altercation/vim-colors-solarized'
+Plug 'oguzbilgic/sexy-railscasts-theme'
+Plug 'Lokaltog/vim-distinguished'
+Plug 'telamon/vim-color-github'
+Plug 'TechnoGate/janus-colors'
+Plug 'junegunn/seoul256.vim'
+Plug 'whatyouhide/vim-gotham'
+Plug 'larssmit/vim-getafe'
+Plug 'Color-Sampler-Pack'
+Plug 'jnurmine/Zenburn'
+Plug 'sjl/badwolf'
+Plug 'Mustang2'
+Plug 'Guardian'
+Plug 'molokai'
+Plug 'Wombat'
 " PLUGINS: GENERAL {{{1
-Plugin 'Shougo/unite.vim'
-Plugin 'Lokaltog/vim-easymotion'
-Plugin 'tpope/vim-commentary'
-Plugin 'freitass/todo.txt-vim'
-Plugin 'tpope/vim-surround'
-Plugin 'jlanzarotta/bufexplorer'
-"Plugin 'xolox/vim-easytags'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-repeat'
-Plugin 'mattn/webapi-vim'
-Plugin 'spolu/dwm.vim'
-Plugin 'workflowish'
-Plugin 'vimwiki'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'rizzatti/funcoo.vim'
-Plugin 'rizzatti/dash.vim'
+Plug 'Shougo/unite.vim'
+Plug 'Lokaltog/vim-easymotion'
+Plug 'tpope/vim-commentary'
+Plug 'freitass/todo.txt-vim'
+Plug 'tpope/vim-surround'
+Plug 'jlanzarotta/bufexplorer'
+"Plug 'xolox/vim-easytags'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-repeat'
+Plug 'mattn/webapi-vim'
+Plug 'spolu/dwm.vim'
+Plug 'workflowish'
+Plug 'vimwiki'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.sh --clang-completer' }
+Plug 'rizzatti/funcoo.vim'
+Plug 'rizzatti/dash.vim'
 
-Plugin 'majutsushi/tagbar'
+Plug 'majutsushi/tagbar'
 nmap <Leader>t :TagbarToggle<CR>
 
-Plugin 'scrooloose/syntastic'
+Plug 'scrooloose/syntastic'
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_loc_list=1
 
-Plugin 'scrooloose/nerdtree'
-Plugin 'jistr/vim-nerdtree-tabs'
+Plug 'scrooloose/nerdtree'
+Plug 'jistr/vim-nerdtree-tabs'
 map <Leader>n <plug>NERDTreeTabsToggle<CR>
 
-Plugin 'kien/ctrlp.vim'
+Plug 'kien/ctrlp.vim'
 let g:ctrlp_map='<c-t>'
 let g:ctrlp_cmd='CtrlP'
 let g:ctrlp_extensions = ['tag']
 
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'honza/vim-snippets'
-Plugin 'garbas/vim-snipmate'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'honza/vim-snippets'
+Plug 'garbas/vim-snipmate'
 
-Plugin 'Gundo'
+Plug 'Gundo'
 nnoremap <F5> :GundoToggle<CR>
 
-Plugin 'YankRing.vim'
+Plug 'YankRing.vim'
 let g:yankring_history_file='.yankring_history'
 
-Plugin 'benmills/vimux'
+Plug 'benmills/vimux'
 let VimuxUseNearestPane = 1
                             " Prompt for a command to run
 noremap <Leader>rp :PromptVimTmuxCommand<CR>
@@ -182,44 +185,45 @@ noremap <Leader>rx :CloseVimTmuxPanes<CR>
                             " Interrupt any command running in the runner pane
 noremap <Leader>rs :InterruptVimTmuxRunner<CR>
 " PLUGINS: VISUAL {{{1
-Plugin 'jeffkreeftmeijer/vim-numbertoggle'
+Plug 'jeffkreeftmeijer/vim-numbertoggle'
 " Plugin 'CSApprox'
-Plugin 'ScrollColors'
-Plugin 'airblade/vim-gitgutter'
+Plug 'ScrollColors'
+Plug 'airblade/vim-gitgutter'
 
-Plugin 'kien/rainbow_parentheses.vim'
-au VimEnter * RainbowParenthesesToggle
-au Syntax * RainbowParenthesesLoadRound
-au Syntax * RainbowParenthesesLoadSquare
-au Syntax * RainbowParenthesesLoadBraces
+Plug 'junegunn/rainbow_parentheses.vim'
+au VimEnter * RainbowParentheses
 
 "Plugin 'Lokaltog/vim-powerline'
 "let g:Powerline_symbols='fancy'
 
-Plugin 'bling/vim-airline'
+Plug 'bling/vim-airline'
 let g:airline_powerline_fonts = 1
 
-Plugin 'nathanaelkane/vim-indent-guides'
+"Plug 'edkolev/tmuxline.vim'
+
+Plug 'nathanaelkane/vim-indent-guides'
 " let g:indent_guides_enable_on_vim_startup=1
 let g:indent_guides_guide_size=1
 
 " PLUGINS: SYNTAXES {{{1
-Plugin 'Arduino-syntax-file'
-Plugin 'tpope/vim-git'
-Plugin 'pangloss/vim-javascript'
-Plugin 'tpope/vim-markdown'
-Plugin 'mmalecki/vim-node.js'
-Plugin 'rosstimson/scala-vim-support'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'VimClojure'
-Plugin 'csv.vim'
-Plugin 'nono/vim-handlebars'
-Plugin 'wlangstroth/vim-haskell'
-Plugin 'tpope/vim-rails'
-Plugin 'groenewege/vim-less'
-Plugin 'Keithbsmiley/swift.vim'
+Plug 'Arduino-syntax-file'
+Plug 'tpope/vim-git'
+Plug 'pangloss/vim-javascript'
+Plug 'tpope/vim-markdown'
+Plug 'mmalecki/vim-node.js'
+Plug 'rosstimson/scala-vim-support'
+Plug 'vim-ruby/vim-ruby'
+Plug 'VimClojure'
+Plug 'csv.vim'
+Plug 'nono/vim-handlebars'
+Plug 'wlangstroth/vim-haskell'
+Plug 'tpope/vim-rails'
+Plug 'groenewege/vim-less'
+Plug 'Keithbsmiley/swift.vim'
 
-filetype plugin indent on   " required after vundle
+call plug#end()
+" PLUGINS: CONFIGURATION {{{1
+colorscheme gotham
 " FUNCTIONS {{{1
 " See http://jeetworks.org/node/89 for explanation
 function! DelEmptyLineAbove()
