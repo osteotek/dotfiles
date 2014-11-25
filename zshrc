@@ -43,4 +43,4 @@ alias t="~/Dropbox/Bin/todo.txt/todo.sh -tnA -d ~/Dropbox/Bin/todo.txt/todo.cfg"
 alias zshreload="source ~/.zshrc"
 alias speed="speedtest-cli --mini http://v.ufanet.ru/"
 #export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
