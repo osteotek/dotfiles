@@ -15,7 +15,6 @@ zstyle ':completion:*:man:*'      menu yes select
 
 if [ `hostname` = "mini" ]; then
   export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:~/dotfiles/bin:~/Dropbox/bin:/Applications/Android\ Studio.app/sdk/platform-tools:$PATH
-  export BYOBU_PREFIX=$(brew --prefix)
 elif [ `hostname` = "retina.local" ]; then
   export PATH=/Developer/NVIDIA/CUDA-6.5/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
   export ANDROID_HOME=/usr/local/opt/android-sdk
@@ -26,6 +25,7 @@ fi
 
 export EDITOR=vim
 export TERM=xterm-256color
+export BYOBU_PREFIX=$(brew --prefix)
 #export ARCHFLAGS="-arch x86_64"
 fpath=(/usr/local/share/zsh-completions $fpath)
 
