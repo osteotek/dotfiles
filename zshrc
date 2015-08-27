@@ -38,3 +38,5 @@ alias t="~/Dropbox/Bin/todo.txt-cli/todo.sh -tnA -d ~/Dropbox/Bin/todo.txt-cli/t
 alias zshreload="source ~/.zshrc"
 alias speed="speedtest-cli --mini http://v.ufanet.ru/"
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
