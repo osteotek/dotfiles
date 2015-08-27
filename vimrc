@@ -141,7 +141,7 @@ Plug 'mattn/webapi-vim'
 Plug 'spolu/dwm.vim'
 Plug 'workflowish'
 Plug 'vimwiki'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.sh --clang-completer' }
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
 Plug 'rizzatti/funcoo.vim'
 Plug 'rizzatti/dash.vim'
 
