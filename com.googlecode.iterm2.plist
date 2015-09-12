@@ -30750,7 +30750,7 @@
 	<key>NSWindow Frame com.apple.typography_panel_PragmataProForPowerline</key>
 	<string>398 598 260 76 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>220 147 890 587 0 0 1440 877 </string>
+	<string>155 93 890 587 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -30975,7 +30975,7 @@
 			<key>Blinking Cursor</key>
 			<false/>
 			<key>Blur</key>
-			<false/>
+			<true/>
 			<key>Blur Radius</key>
 			<real>15</real>
 			<key>Bold Color</key>
@@ -31543,7 +31543,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.0</real>
+			<real>0.14869637573964498</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
@@ -32294,7 +32294,7 @@
 		</dict>
 	</array>
 	<key>NoSyncLastTipTime</key>
-	<real>462451692.10003698</real>
+	<real>463456345.36981302</real>
 	<key>NoSyncNeverRemindPrefsChangesCopy</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
@@ -32305,6 +32305,10 @@
 	<real>453322542.78381598</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
 	<real>462364344.64142799</real>
+	<key>NoSyncTipsToNotShow</key>
+	<array>
+		<string>000</string>
+	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
 	<key>OpenArrangementAtStartup</key>
@@ -32367,11 +32371,11 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/testing3.xml</string>
+	<string>http://iterm2.com/appcasts/testing3.xml</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-08-28T19:37:15Z</date>
+	<date>2015-09-09T01:52:25Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Secure Input</key>
@@ -32388,8 +32392,10 @@
 	<integer>4</integer>
 	<key>SwitchWindowModifier</key>
 	<integer>6</integer>
+	<key>TabStyle</key>
+	<integer>1</integer>
 	<key>TabViewType</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>ThreeFingerEmulates</key>
 	<false/>
 	<key>TmuxDashboardLimit</key>
@@ -32423,6 +32429,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.9.20150626</string>
+	<string>2.9.20150830</string>
 </dict>
 </plist>

@@ -144,6 +144,7 @@ Plug 'vimwiki'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
 Plug 'rizzatti/funcoo.vim'
 Plug 'rizzatti/dash.vim'
+Plug 'lervag/vimtex'
 
 Plug 'majutsushi/tagbar'
 nmap <Leader>t :TagbarToggle<CR>
