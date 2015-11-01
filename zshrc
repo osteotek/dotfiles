@@ -26,6 +26,7 @@ fi
 export EDITOR=vim
 export TERM=xterm-256color
 export BYOBU_PREFIX=$(brew --prefix)
+export MP_FULLNAME="Arthur Tazhitdinov"
 #export ARCHFLAGS="-arch x86_64"
 fpath=(/usr/local/share/zsh-completions $fpath)
 
