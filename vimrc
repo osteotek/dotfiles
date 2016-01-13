@@ -196,8 +196,8 @@ Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'ScrollColors'
 Plug 'airblade/vim-gitgutter'
 
-Plug 'junegunn/rainbow_parentheses.vim'
-au VimEnter * RainbowParentheses
+"Plug 'junegunn/rainbow_parentheses.vim'
+"au VimEnter * RainbowParentheses
 
 "Plugin 'Lokaltog/vim-powerline'
 "let g:Powerline_symbols='fancy'
