@@ -229,7 +229,7 @@ Plug 'Keithbsmiley/swift.vim'
 
 call plug#end()
 " PLUGINS: CONFIGURATION {{{1
-colorscheme gotham
+colorscheme solarized
 " FUNCTIONS {{{1
 " See http://jeetworks.org/node/89 for explanation
 function! DelEmptyLineAbove()

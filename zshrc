@@ -15,10 +15,8 @@ zstyle ':completion:*:man:*'      menu yes select
 
 if [ `hostname` = "mini" ]; then
   export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:~/dotfiles/bin:~/Dropbox/bin:/Applications/Android\ Studio.app/sdk/platform-tools:$PATH
-elif [ `hostname` = "retina.local" ]; then
+elif [ `hostname` = "retina" ]; then
   export PATH=/Library/TeX/texbin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
-  export ANDROID_HOME=/usr/local/opt/android-sdk
-  #export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-6.0/lib:$DYLD_LIBRARY_PATH
 elif [ `uname` = "Linux" ]; then
   export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:~/dotfiles/bin
 fi
