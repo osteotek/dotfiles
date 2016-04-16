@@ -114,6 +114,7 @@ call plug#begin('~/.vim/bundle')
 " PLUGINS: COLORSCHEMES {{{1
 Plug 'altercation/vim-colors-solarized'
 Plug 'oguzbilgic/sexy-railscasts-theme'
+Plug 'atelierbram/vim-colors_duotones'
 Plug 'Lokaltog/vim-distinguished'
 Plug 'telamon/vim-color-github'
 Plug 'TechnoGate/janus-colors'
@@ -229,7 +230,7 @@ Plug 'Keithbsmiley/swift.vim'
 
 call plug#end()
 " PLUGINS: CONFIGURATION {{{1
-colorscheme solarized
+colorscheme gotham256
 " FUNCTIONS {{{1
 " See http://jeetworks.org/node/89 for explanation
 function! DelEmptyLineAbove()
