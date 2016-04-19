@@ -3,17 +3,19 @@ export ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="miloshadzic"
 
-plugins=(git go extract osx brew fasd vundle history-substring-search pip pyenv pylint python vagrant virtualenv virtualenvwrapper zsh-syntax-highlighting)
+plugins=(git go geeknote vi-mode extract osx brew fasd vundle history-substring-search pip pyenv pylint python vagrant virtualenv virtualenvwrapper zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
 # PERSONAL CONFIG
 
+bindkey -v
+
 zstyle ':completion:*:manuals'    separate-sections true
 zstyle ':completion:*:manuals.*'  insert-sections   true
 zstyle ':completion:*:man:*'      menu yes select
 
-export PATH=/usr/local/cuda/bin:/Library/TeX/texbin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH=/usr/local/cuda/bin:/Library/TeX/texbin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/arthur/.gem/ruby/2.0.0/bin
 export DYLD_FALLBACK_LIBRARY_PATH=/usr/local/cuda/lib/:$DYLD_FALLBACK_LIBRARY_PATH
 
 export EDITOR=vim
