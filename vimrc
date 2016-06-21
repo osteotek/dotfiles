@@ -101,6 +101,7 @@ nnoremap <leader><space> :noh<cr>
                             " L-w to make new vertical split and jump to it
 noremap <leader>w <C-w>v<C-w>l
                             " TAB and Shift-TAB for tab switching in normal mode
+:nmap <silent> <leader>d <Plug>DashSearch
 nnoremap <TAB> gt
 nnoremap <S-TAB> gT
 " VIM-PLUG INITIALIZATION {{{1
@@ -140,6 +141,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'mattn/webapi-vim'
 Plug 'neilagabriel/vim-geeknote'
+Plug 'xolox/vim-notes'
+Plug 'xolox/vim-misc'
 Plug 'wakatime/vim-wakatime'
 Plug 'spolu/dwm.vim'
 Plug 'workflowish'
