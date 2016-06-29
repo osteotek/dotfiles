@@ -121,6 +121,7 @@ Plug 'telamon/vim-color-github'
 Plug 'TechnoGate/janus-colors'
 Plug 'junegunn/seoul256.vim'
 Plug 'whatyouhide/vim-gotham'
+Plug 'eddsteel/vim-vimbrant'
 Plug 'larssmit/vim-getafe'
 Plug 'Color-Sampler-Pack'
 Plug 'jnurmine/Zenburn'
@@ -140,14 +141,14 @@ Plug 'jlanzarotta/bufexplorer'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'mattn/webapi-vim'
-Plug 'neilagabriel/vim-geeknote'
+"Plug 'neilagabriel/vim-geeknote'
 Plug 'xolox/vim-notes'
 Plug 'xolox/vim-misc'
 Plug 'wakatime/vim-wakatime'
 Plug 'spolu/dwm.vim'
 Plug 'workflowish'
 Plug 'vimwiki'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --gocode-completer --tern-completer' }
 let g:ycm_semantic_triggers = {
       \  'tex'  : ['{'],
       \ }
@@ -235,7 +236,7 @@ Plug 'Keithbsmiley/swift.vim'
 
 call plug#end()
 " PLUGINS: CONFIGURATION {{{1
-colorscheme gotham256
+colorscheme vimbrant
 " FUNCTIONS {{{1
 " See http://jeetworks.org/node/89 for explanation
 function! DelEmptyLineAbove()

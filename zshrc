@@ -15,7 +15,7 @@ zstyle ':completion:*:manuals'    separate-sections true
 zstyle ':completion:*:manuals.*'  insert-sections   true
 zstyle ':completion:*:man:*'      menu yes select
 
-export PATH=/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/arthur/.gem/ruby/2.0.0/bin:$PATH
+export PATH=/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/arthur/.gem/ruby/2.0.0/bin:/usr/local/opt/go/libexec/bin:$PATH
 export DYLD_FALLBACK_LIBRARY_PATH=/usr/local/cuda/lib/:$DYLD_FALLBACK_LIBRARY_PATH
 export C_INCLUDE_PATH=/usr/local/include/libiomp/:$C_INCLUDE_PATH
 export CPLUS_INCLUDE_PATH=/usr/local/include/libiomp/:$CPLUS_INCLUDE_PATH
@@ -48,3 +48,4 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #source /usr/local/bin/virtualenvwrapper.sh
 
 test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
+fpath=(/usr/local/share/zsh-completions $fpath)
