@@ -158,6 +158,8 @@ Plug 'rizzatti/dash.vim'
 "Plug 'lervag/vimtex'
 Plug 'LaTeX-Box-Team/LaTeX-Box'
 
+Plug 'fatih/vim-go'
+
 Plug 'majutsushi/tagbar'
 nmap <Leader>t :TagbarToggle<CR>
 
