@@ -5,15 +5,6 @@ Saved Links:
 Raft:
 http://thesecretlivesofdata.com/raft/
 
-How Google Is Remaking Itself for “Machine Learning First” | Hacker News:
-https://news.ycombinator.com/item?id=11954988
-
-How Google is Remaking Itself as a “Machine Learning First” Company — Backchannel:
-https://backchannel.com/how-google-is-remaking-itself-as-a-machine-learning-first-company-ada63defcb70#.wmw74tsxa
-
-koekeishiya/kwm: Tiling window manager with focus follows mouse for OSX:
-https://github.com/koekeishiya/kwm
-
 ivanslapnicar/GIAN-Applied-NLA-Course: Materials for the GIAN Course "Modern Applications of Numerical Linear Algebra Methods":
 https://github.com/ivanslapnicar/GIAN-Applied-NLA-Course
 
@@ -2183,9 +2174,6 @@ http://mjtsai.com/blog/2016/05/21/dynamic-swift-2/
 The MEAN Stack | Code School:
 https://www.codeschool.com/mean/?utm_medium=email&utm_campaign=weekly_curated_content_paths&utm_source=mailchimp&utm_content=null&mc_cid=abc8b29001&mc_eid=200f5ccecd
 
-ВЕДОМОСТИ - В России бурно развиваются сервисы доставки готовых кулинарных наборов:
-http://www.vedomosti.ru/management/articles/2016/05/20/641686-pischevoi-konstruktor
-
 Bytedeco - Going deeper into deep learning:
 http://bytedeco.org/news/2016/05/15/deeper-in-deep-learning/
 
@@ -2228,23 +2216,11 @@ https://www.wikiwand.com/en/Millennials
 Qualified - Product Hunt:
 https://www.producthunt.com/tech/qualified-2
 
-PillarHub - Product Hunt:
-https://www.producthunt.com/tech/pillarhub
-
-fast-cli - Product Hunt:
-https://www.producthunt.com/tech/fast-cli
-
-Jason - Product Hunt:
-https://www.producthunt.com/tech/jason
-
 Algorithm Visualizer - Product Hunt:
 https://www.producthunt.com/tech/algorithm-visualizer
 
 A wearable breathalyzer won $200,000 in a biosensor competition | The Verge:
 http://www.theverge.com/2016/5/22/11735698/wearable-breathalyzer-bactrack-national-institutes-of-health
-
-«Печальная карьера – это когда они идут работать в Facebook или в “Яндекс”»:
-https://slon.ru/posts/68391
 
 Big Dating. Возможен ли научно обоснованный онлайн-пикап?:
 http://22century.ru/docs/big-dating
@@ -2273,9 +2249,6 @@ http://datadriventechradar.com/
 The Unreasonable Effectiveness of Recurrent Neural Networks:
 http://karpathy.github.io/2015/05/21/rnn-effectiveness/
 
-Giving up on Julia:
-http://zverovich.net/2016/05/13/giving-up-on-julia.html
-
 HyperDev :･ﾟ✧:
 https://hyperdev.com/#!/project/slash-meadow
 
@@ -2284,4 +2257,110 @@ http://pythontutor.com/
 
 Александра Цибуля. Избыток вещей | Издательство «Новое литературное обозрение»:
 http://nlobooks.ru/node/7017#sthash.Q8a5MmFy.dpuf
+
+Dive into Machine Learning by hangtwenty:
+http://hangtwenty.github.io/dive-into-machine-learning/
+
+PostgreSQL Exercises:
+https://pgexercises.com/gettingstarted.html
+
+Intro - I2P:
+https://geti2p.net/en/about/intro
+
+4 ways to get motivated when you don't feel like... - Planio Blog:
+http://plan.io/blog/post/146892730063/4-ways-to-get-motivated-when-you-dont-feel-like
+
+System32: WORKING PROXY LIST! 8000+ PROXIES!:
+http://system32virus.blogspot.ru/2016/03/working-proxy-list-8000-proxies.html
+
+Proxicity API Pricing | Free RESTful API | Proxicity:
+https://www.proxicity.io/pricing
+
+Университет Иннополис принимает заявки на VIII Летнюю Школу высокопроизводительных вычислений в области компьютерного зрения:
+https://university.innopolis.ru/news/hpc8/
+
+proxy-checker:
+https://www.npmjs.com/package/proxy-checker
+
+linkedinSpider/optimisedSpider.py at master · pediredla/linkedinSpider:
+https://github.com/pediredla/linkedinSpider/blob/master/optimisedSpider.py
+
+Python Cloud: GFS the Google File System in 199 Lines of Python:
+http://clouddbs.blogspot.ru/2010/11/gfs-google-file-system-in-199-lines-of.html
+
+Как я похудел на 39 килограммов и что при этом понял - Лайфхакер:
+http://lifehacker.ru/2016/07/08/how-i-lost-39-kg/?utm_source=telegram&utm_medium=subscription
+
+Motivation is Overvalued. Environment Often Matters More. | James Clear:
+http://jamesclear.com/power-of-environment?utm_source=pocket&utm_medium=email&utm_campaign=pockethits
+
+Python and VS Code - Blog - Bespohk:
+https://bespohk.com/blog/configuring-python-visual-studio-code
+
+Go best practices, six years in:
+http://peter.bourgon.org/go-best-practices-2016/
+
+Use Python Effectively on OS X:
+http://blog.manbolo.com/2014/09/27/use-python-effectively-on-os-x
+
+21.27. xmlrpc.server — Basic XML-RPC servers — Python 3.5.2 documentation:
+https://docs.python.org/3.5/library/xmlrpc.server.html?highlight=xmlrpc.server#module-xmlrpc.server
+
+Python2orPython3 - Python Wiki:
+https://wiki.python.org/moin/Python2orPython3
+
+The key differences between Python 2.7.x and Python 3.x with examples:
+http://sebastianraschka.com/Articles/2014_python_2_3_key_diff.html#raising-exceptions
+
+Dive Into Python 3:
+http://www.diveintopython3.net/index.html
+
+26.4. unittest — Unit testing framework — Python 3.5.2 documentation:
+https://docs.python.org/3.5/library/unittest.html
+
+Structuring Your Project — The Hitchhiker's Guide to Python:
+http://docs.python-guide.org/en/latest/writing/structure/
+
+A beginners guide to thinking in SQL 🐘:
+http://www.sohamkamani.com/blog/2016/07/07/a-beginners-guide-to-sql/
+
+Summary Report • Toggl:
+https://toggl.com/app/reports/summary/1230360
+
+Current Status - Google Sheets:
+https://docs.google.com/spreadsheets/d/1VHlT5kQwRxBH6lFE9acO1JEJTTZ2Y0S05LCYA34LIjA/edit#gid=0
+
+Kanban - Sprint #8:
+https://rdp.myjetbrains.com/youtrack/rest/agile/Kanban-0/sprint/Sprint%20%238
+
+Cross-Platform Swift:
+https://realm.io/news/altconf-boris-bugling-cross-platform-swift/
+
+Скоростные UFS-карты памяти от Samsung: чего ожидать от нового стандарта? / Geektimes:
+https://geektimes.ru/post/278266/
+
+Главный редактор «Афиша Daily» Екатерина Дементьева: «Совсем не классно два года любить Казань, а потом решить: надоело» - Инде:
+http://inde.io/article/1311-glavnyy-redaktor-afisha-daily-ekaterina-dementieva-sovsem-ne-klassno-dva-goda-lyubit-kazan-a-potom-reshit-nadoelo
+
+vinogradovkonst/runa-data-platform:
+https://github.com/vinogradovkonst/runa-data-platform
+
+python get hostname - Google Search:
+https://www.google.ru/?client=safari#q=python+get+hostname&gfe_rd=cr
+
+Ask HN: How do you decide for a backend language? | Hacker News:
+https://news.ycombinator.com/item?id=12078111
+
+Welcome to Alembic’s documentation! — Alembic 0.8.7 documentation:
+http://alembic.zzzcomputing.com/en/latest/
+
+Network containers:
+https://docs.docker.com/engine/tutorials/networkingcontainers/
+
+В МТИ создали анонимную сеть, которая якобы безопасней Tor / Geektimes:
+https://geektimes.ru/post/278358/
+
+Hello, TensorFlow. Библиотека машинного обучения от Google / Хабрахабр:
+https://habrahabr.ru/post/305578/
+
 

@@ -3836,6 +3836,8 @@
 	<false/>
 	<key>HideActivityIndicator</key>
 	<false/>
+	<key>HideFromDockAndAppSwitcher</key>
+	<true/>
 	<key>HideMenuBarInFullscreen</key>
 	<true/>
 	<key>HideScrollbar</key>
@@ -3909,11 +3911,13 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>599 185 445 103 0 0 1440 877 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>269 397 606 456 0 0 1440 877 </string>
+	<string>269 426 606 456 0 0 1440 900 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 382 620 392 0 0 1440 900 </string>
+	<key>NSWindow Frame UKCrashReporter</key>
+	<string>99 316 592 584 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1440 900 0 0 1440 877 </string>
+	<string>0 0 650 900 0 0 1440 900 </string>
 	<key>NeverWarnAboutShortLivedSessions_264C3CE0-686A-460C-87A0-CA7E88BC2596</key>
 	<true/>
 	<key>New Bookmarks</key>
@@ -5464,7 +5468,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>61C7A52B-7B88-4794-A50D-F5C97AF16CA1</string>
 	<key>NoSyncLastTipTime</key>
-	<real>489580602.94953102</real>
+	<real>489928259.19233602</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -5481,6 +5485,10 @@
 		<string>0002</string>
 		<string>0003</string>
 		<string>0004</string>
+		<string>0005</string>
+		<string>0006</string>
+		<string>0007</string>
+		<string>0008</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
@@ -5489,7 +5497,7 @@
 	<key>OpenBookmark</key>
 	<false/>
 	<key>OpenNoWindowsAtStartup</key>
-	<false/>
+	<true/>
 	<key>OpenTmuxWindowsIn</key>
 	<integer>0</integer>
 	<key>PassOnControlClick</key>
@@ -5550,7 +5558,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-07-07T16:30:06Z</date>
+	<date>2016-07-11T10:54:10Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -5575,6 +5583,8 @@
 	<integer>6</integer>
 	<key>TabStyle</key>
 	<integer>0</integer>
+	<key>TabTitlesUseSmartTruncation</key>
+	<true/>
 	<key>TabViewType</key>
 	<integer>1</integer>
 	<key>ThreeFingerEmulates</key>
@@ -5590,6 +5600,8 @@
 	</array>
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<false/>
+	<key>UKCrashReporterLastCrashReportDate</key>
+	<real>1468277888</real>
 	<key>URLHandlersByGuid</key>
 	<dict/>
 	<key>UseBorder</key>
@@ -5609,7 +5621,7 @@
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>
-	<string>3.0.2</string>
+	<string>3.0.4</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
