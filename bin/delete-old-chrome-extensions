@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+for i in ~/Library/Application\ Support/Google/Chrome/Default/Extensions/*(/)
+do
+    if [[ ${#$(ls -1 $i)} -gt 1 ]]
+    then
+        rm -r $i/*^(Om[1,-2])
+    fi
+done
