@@ -6,13 +6,14 @@ set hidden                  " allow unsaved buffers
 set ttyfast                 " indicates fast terminal connection
 set tildeop                 " use '~' (case changing) as operator
 set mouse=a                 " use mouse in all modes
-"set clipboard+=unnamed      " yanks go to clipboard instead
+set clipboard+=unnamed      " yanks go to clipboard instead
 set autowrite               " writes on make/shell commands
 set autoread                " reads on make/shell commands
 set ignorecase              " ignore case completely
 set smartcase               " be case sensitive when input has a capital letter
 set path=**
 let g:is_posix = 1          " use modern version of builtin shell
+
 " BACKUPS {{{1
 " Save your backups to a less annoying place than the current directory.
 " If you have .vim-backup in the current directory, it'll use that.
@@ -73,7 +74,7 @@ set laststatus=2            " always show status line
 set wildmenu                " enhanced command-line completion
 set wildmode=full           " at command line, complete longest string
 set wildignorecase          " ignore case in file name completion
-"set t_Co=256                " terminal has 256 colors
+" set t_Co=256                " terminal has 256 colors
 set t_ut=
 
 if (has("nvim"))
@@ -145,9 +146,12 @@ call plug#begin('~/.vim/bundle')
 Plug 'altercation/vim-colors-solarized'
 Plug 'oguzbilgic/sexy-railscasts-theme'
 Plug 'atelierbram/vim-colors_duotones'
+Plug 'hukl/Smyck-Color-Scheme/'
 Plug 'telamon/vim-color-github'
 Plug 'tpope/vim-vividchalk'
 Plug 'morhetz/gruvbox/'
+Plug 'dracula/vim'
+Plug 'dylanaraps/wal.vim'
 Plug 'TechnoGate/janus-colors'
 Plug 'junegunn/seoul256.vim'
 Plug 'whatyouhide/vim-gotham'
@@ -156,15 +160,15 @@ Plug 'larssmit/vim-getafe'
 "Plug 'Color-Sampler-Pack'
 Plug 'jnurmine/Zenburn'
 Plug 'sjl/badwolf'
-Plug 'Mustang2'
-Plug 'Guardian'
-Plug 'molokai'
-Plug 'Wombat'
+" Plug 'Mustang2'
+" Plug 'Guardian'
+" Plug 'molokai'
+" Plug 'Wombat'
 Plug 'ayu-theme/ayu-vim'
 Plug 'rakr/vim-one'
 Plug 'joshdick/onedark.vim'
 Plug 'jacoborus/tender.vim'
-Plug 'vim-colors-pencil'
+" Plug 'vim-colors-pencil'
 Plug 'AlessandroYorba/Alduin'
 Plug 'AlessandroYorba/Sidonia'
 Plug 'AlessandroYorba/Monrovia'
@@ -177,6 +181,7 @@ Plug 'nightsense/seabird'
 Plug 'Shougo/vimproc.vim', { 'do': './make' }
 Plug 'terryma/vim-expand-region'
 Plug 'Shougo/denite.nvim'
+Plug 'tpope/vim-fireplace'
 Plug 'blindFS/vim-taskwarrior'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'easymotion/vim-easymotion'
@@ -204,8 +209,8 @@ Plug 'xolox/vim-notes'
 Plug 'xolox/vim-misc'
 Plug 'wakatime/vim-wakatime'
 Plug 'spolu/dwm.vim'
-Plug 'workflowish'
-Plug 'vimwiki'
+" Plug 'workflowish'
+" Plug 'vimwiki'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --gocode-completer --tern-completer' }
 let g:ycm_semantic_triggers = {
       \  'tex'  : ['{'],
@@ -257,8 +262,8 @@ Plug 'mhinz/vim-startify'
 Plug 'mbbill/undotree'
 nnoremap <F5> :UndotreeToggle<CR>
 
-Plug 'YankRing.vim'
-let g:yankring_history_file='.yankring_history'
+" Plug 'YankRing.vim'
+" let g:yankring_history_file='.yankring_history'
 
 Plug 'christoomey/vim-tmux-navigator'
 
@@ -282,12 +287,15 @@ Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 
 " PLUGINS: VISUAL {{{1
 Plug 'junegunn/goyo.vim'
+Plug 'miyakogi/seiya.vim'
+let g:seiya_auto_enable=1
+let g:seiya_target_groups = has('nvim') ? ['guibg'] : ['ctermbg']
 Plug 'myusuf3/numbers.vim'
 Plug 'junegunn/limelight.vim'
 autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
 " Plugin 'CSApprox'
-Plug 'ScrollColors'
+" Plug 'ScrollColors'
 Plug 'airblade/vim-gitgutter'
 
 Plug 'junegunn/rainbow_parentheses.vim'
@@ -302,7 +310,7 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 "let g:airline#extensions#tabline#left_sep = ' '
 "let g:airline#extensions#tabline#left_alt_sep = '|'
-let g:airline#extensions#tmuxline#enabled = 1
+let g:airline#extensions#tmuxline#enabled = 0
 
 "Plug 'edkolev/tmuxline.vim'
 Plug 'weihanglo/tmuxline.vim'
@@ -324,17 +332,17 @@ Plug 'kshenoy/vim-signature'
 
 " PLUGINS: SYNTAXES {{{1
 Plug 'sheerun/vim-polyglot'
-Plug 'VimClojure'
-Plug 'csv.vim'
+" Plug 'VimClojure'
+" Plug 'csv.vim'
 
 call plug#end()
 " PLUGINS: CONFIGURATION {{{1
-"let g:sierra_Pitch=1
+let g:sierra_Pitch=1
 let g:gruvbox_italic=1
 let g:two_firewatch_italics=1
 "let g:airline_theme='one'
-"let g:one_allow_italics = 1
-"let g:onedark_terminal_italics = 1
+let g:one_allow_italics = 1
+let g:onedark_terminal_italics = 1
 
 let g:airline_theme='twofirewatch'
 let iterm_profile = $ITERM_PROFILE
@@ -346,8 +354,9 @@ endif
 
 "let ayucolor="light"  " for light version of theme
 "let ayucolor="mirage" " for mirage version of theme
-let ayucolor="dark"   " for dark version of theme
-colorscheme ayu
+let ayucolor="mirage"   " for dark version of theme
+colorscheme gruvbox
+
 
 if (has("gui"))
   set guifont=Fira\ Code:h16
@@ -388,6 +397,7 @@ function! Today()
     exe "normal a". today
 endfunction
 command! Today :call Today()
+
 " See http://jeetworks.org/node/89 for explanation
 function! DelEmptyLineAbove()
     if line(".") == 1
