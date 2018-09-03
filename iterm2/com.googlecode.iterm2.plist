@@ -40774,9 +40774,9 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 363 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>366 359 796 486 0 0 1440 877 </string>
+	<string>366 451 918 394 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 220 920 657 0 0 1440 877 </string>
+	<string>280 148 920 657 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_96A82A9C-6F53-4A6B-B61A-082E5CC665CC</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_96A82A9C-6F53-4A6B-B61A-082E5CC665CC_selection</key>
@@ -41629,7 +41629,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Thin Strokes</key>
-			<integer>1</integer>
+			<integer>3</integer>
 			<key>Transparency</key>
 			<real>0.0</real>
 			<key>Triggers</key>
@@ -43353,7 +43353,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>AC9504C9-5157-438B-9283-E281EF25CCBF</string>
 	<key>NoSyncLastTipTime</key>
-	<real>555338460.23959303</real>
+	<real>557144630.39332604</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -43387,6 +43387,12 @@
 		<string>0019</string>
 		<string>0020</string>
 		<string>0021</string>
+		<string>0022</string>
+		<string>0023</string>
+		<string>0024</string>
+		<string>0025</string>
+		<string>0026</string>
+		<string>0027</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
@@ -43460,7 +43466,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-08-07T13:26:32Z</date>
+	<date>2018-08-29T09:35:34Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -43543,7 +43549,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.2.0beta9</string>
+	<string>3.2.1beta2</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
