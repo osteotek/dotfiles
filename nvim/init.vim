@@ -221,6 +221,15 @@ nmap ga <Plug>(EasyAlign)
 "Plug 'fatih/vim-go'
 
 "Plug 'tpope/vim-obsession'
+"
+" Plug 'morhetz/gruvbox'
+Plug 'dylanaraps/wal.vim'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
+" Plug 'scrooloose/nerdtree'
+" Plug 'Xuyuanp/nerdtree-git-plugin'
+" Plug 'jistr/vim-nerdtree-tabs'
+Plug 'junegunn/vim-github-dashboard'
 
 Plug 'majutsushi/tagbar'
 nmap <Leader>t :TagbarToggle<CR>
@@ -331,9 +340,9 @@ Plug 'sheerun/vim-polyglot'
 " Plug 'csv.vim'
 
 Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
 
 Plug 'junegunn/vim-easy-align'
-Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-github-dashboard'
 Plug 'mhinz/vim-startify'
 Plug 'mhinz/vim-janah'
@@ -384,7 +393,7 @@ call plug#end()
 " let ayucolor="light"  " for light version of theme
 "let ayucolor="mirage" " for mirage version of theme
 "let ayucolor="dark"   " for dark version of theme
-colorscheme default
+colorscheme wal
 
 
 if (has("gui"))
@@ -394,6 +403,8 @@ if (has("gui"))
   set macligatures
   set macthinstrokes
 endif
+
+" set rtp+=/usr/local/opt/fzf
 
 " configures CtrlP to use git or silver searcher for autocompletion
 " https://sheerun.net/2014/03/21/how-to-boost-your-vim-productivity/
@@ -410,15 +421,15 @@ endif
 
 " Different cursor for insert mode in iTerm2, with tmux workaround.
 " https://gist.github.com/1195581
-"if exists('$ITERM_PROFILE')
-"  if exists('$TMUX')
-"    let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
-"    let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
-"  else
-"    let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-"    let &t_EI = "\<Esc>]50;CursorShape=0\x7"
-"  endif
-"endif
+if exists('$ITERM_PROFILE')
+  if exists('$TMUX')
+    let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+    let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+  else
+    let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+    let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+  endif
+endif
 
 " FUNCTIONS {{{1
 function! Today()
